@@ -17,7 +17,7 @@ A command-line application that dynamically generates a README.md from a user's 
 
 
 ## Installation
-install node application. then run the following: npm i
+Install node application. Then, run the following: npm i
 
 ## Usage
 In your commandline, while in the directory where your index.js file is, run "node index.js". Output will be generated in the same directory with name "README.md"
@@ -30,9 +30,7 @@ No testing instructions provided at this time.
 
 ## Questions
 
-If you have any questions don't hesitate to send me an email or create an issue for this repository
-
-Email: eeeee@gmail.com
+If you have any questions don't hesitate to create an issue for this repository 
 
 ## Author
 ![Repo Owner Image](https://avatars.githubusercontent.com/edithdaria?s=100)

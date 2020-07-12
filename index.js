@@ -90,7 +90,7 @@ promptUser().then(function(a){
         contribute: a.contribute,
         test: a.test,
         profilePicture: profilePicture(a.includeProfilePicture, a.username),
-        email: a.email
+        email: email(a.includeEmail, a.email)
 
     }
 
@@ -129,11 +129,22 @@ function licenseBadge(data){
 
 function profilePicture(data, user){
     if (data === true) {
-        return `(https://avatars.githubusercontent.com/${user}?s=100)`;
+        return `![Repo Owner Image](https://avatars.githubusercontent.com/${user}?s=100)`;
     }
     
     else {
-        return null;
+        return `[${user}](https://github.com/${user})`;
+    }
+
+}
+
+function email(data, email){
+    if (data === true) {
+        return `or send an email to ${email}`;
+    }
+    
+    else {
+        return "";
     }
 
 }
