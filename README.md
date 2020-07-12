@@ -1,10 +1,11 @@
+
   
 # Readme Generator
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-This will help
+A command-line application that dynamically generates a README.md from a user's input.
 
 ## Table Of Contents
 * [Installation](#Installation)
@@ -12,19 +13,27 @@ This will help
 * [Contributing](#Contributing)
 * [Test](#Test)
 * [Questions](#Questions)
+* [Author](#Author)
+
 
 ## Installation
-
+install node application. then run the following: npm i
 
 ## Usage
-fei
+In your commandline, while in the directory where your index.js file is, run "node index.js". Output will be generated in the same directory with name "README.md"
 
 ## Contribute
-fe
+If you would like to contribute please create an issue. Alternatively, clone this repo and make modifications to your copy.
 
 ## Test
+No testing instructions provided at this time.
 
 ## Questions
-[![Repo Owner Image](https://avatars.githubusercontent.com/edithdaria?s=100)]
-Email: edithdariafef
+
+If you have any questions don't hesitate to send me an email or create an issue for this repository
+
+Email: eeeee@gmail.com
+
+## Author
+![Repo Owner Image](https://avatars.githubusercontent.com/edithdaria?s=100)
 

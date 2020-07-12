@@ -4,10 +4,6 @@ const fs = require("fs");
 const axios = require("axios");
 
 
-
-
-
-
 const questions = [
     {
         type: "input",
@@ -63,20 +59,25 @@ const questions = [
     {
         type: "input",
         name: "email",
-        message: "Email Address: "
+        message: "Email Address: ",
+        when: function (res){
+            return res.includeEmail;
+        }
     }
 
 ];
+
+
+init();
 
 function promptUser() {
     return inquirer.prompt(questions);
 }
 
-init();
 
 function init() {
 promptUser().then(function(a){
-console.log(a.includeProfilePicture);
+//console.log(a.includeProfilePicture);
 
     const data = {
 
@@ -116,13 +117,13 @@ function writeToFile(fileName, data) {
 
 function licenseBadge(data){
     if(data === "MIT") {
-        let badge = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
-        console.log(typeof badge);
+        let badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+        //console.log(typeof badge);
         return badge;
 
     }
     else{
-        return "![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)";
+        return "[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
     }
 }
 
@@ -130,6 +131,11 @@ function profilePicture(data, user){
     if (data === true) {
         return `(https://avatars.githubusercontent.com/${user}?s=100)`;
     }
+    
+    else {
+        return null;
+    }
+
 }
 
 
