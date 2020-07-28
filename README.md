@@ -1,11 +1,11 @@
 
   
-# Note Taker
+# Readme Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-User can use a note taker to organize thoughts and keep track of tasks to be completed. One can write and save notes and delete notes if needed.
+A comand-line application that dynamically generates a README.md from a user's input.
 
 ## Table Of Contents
 * [Installation](#Installation)
@@ -17,10 +17,10 @@ User can use a note taker to organize thoughts and keep track of tasks to be com
 
 
 ## Installation
-run the following on node terminal 'node server.js'. Then execute the url on the webpage and use the note taker
+Install node application. Then run the following: npm i
 
 ## Usage
-Once the webpage is live, user can interact by typing in notes and save and delete as needed.
+In your commandline, while in the directory where your index.js file is, run "node index.js". Output will be generated in the same directory with name "README.md"
 
 ## Contribute
 If you would like to contribute, please create an issue. Alternatively, clone this repo and make modifications to your copy.
@@ -34,7 +34,4 @@ If you have any questions don't hesitate to create an issue for this repository
 
 ## Author
 [edithdaria](https://github.com/edithdaria)
-
-## Demo
-[![Demo](./assets/readme_generator.gif)](https://youtu.be/HW85lfWFo-g)
 
