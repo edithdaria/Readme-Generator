@@ -39,6 +39,4 @@ If you have any questions don't hesitate to create an issue for this repository
 ## Author
 [edithdaria](https://github.com/edithdaria)
 
-## Demo
-![Demo](./public/assets/demo/Note_Taker.gif)
 
